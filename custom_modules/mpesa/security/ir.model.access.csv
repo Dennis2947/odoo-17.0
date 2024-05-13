@@ -1,0 +1,5 @@
+"id","name","model_id:id/name","group_id:id/name","perm_read","perm_write","perm_create","perm_unlink"
+"mpesa_configuration_access","Mpesa Configuration Access","model_mpesa_configuration","base.group_system","1","1","1","1"
+"mpesa_payment_access","Mpesa Payment Access","model_mpesa_payment","base.group_system","1","1","1","1"
+"mpesa_partner_access","Mpesa Partner Access","model_res_partner","base.group_system","1","0","0","0"
+"mpesa_account_move_access","Mpesa Account Move Access","model_account_move","base.group_system","1","0","0","0"

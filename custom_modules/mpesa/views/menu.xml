@@ -1,0 +1,10 @@
+
+<odoo>
+    <menuitem id="Mpesa_menu_root" name="Mpesa Payment" sequence="10"/>
+
+    <menuitem id="mpesa_menu_configuration" name="Mpesa_configuration" parent="Mpesa_menu_root" sequence="1"/>
+    <menuitem id="mpesa_menu_payment" name="Mpesa_payment" parent="Mpesa_menu_root" sequence="1"/>
+    <menuitem id="mpesa_menu_pos_order" name="POS_Order" parent="Mpesa_menu_root" sequence="1"/>
+    <menuitem id="mpesa_menu_sales_order" name="Sales_Order" parent="Mpesa_menu_root" sequence="1"/>
+
+</odoo>

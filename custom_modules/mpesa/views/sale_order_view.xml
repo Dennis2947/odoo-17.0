@@ -1,0 +1,28 @@
+<odoo>
+    <record id="action_sales_order" model="ir.actions.act_window">
+        <field name="name">Sales Order</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">sale.order</field>
+        <field name="view_mode">form</field>
+    </record>
+
+    <record id="view_mpesa_configuration_form" model="ir.ui.view">
+        <field name="name">sale.order.form</field>
+        <field name="model">sale.order</field>
+        <field name="arch" type="xml">
+            <form string="Sale Order">
+                <sheet>
+                    <group>
+                        <field name="partner_id"/>
+                        <field name="mpesa_payment_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <menuitem id="mpesa_menu_sales_order"
+              name="Sales Order"
+              action="action_pos_order"
+              parent="Mpesa_menu_root"
+              sequence="10"/>
+</odoo>

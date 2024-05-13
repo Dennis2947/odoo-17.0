@@ -1,0 +1,35 @@
+<odoo>
+    <record id="action_mpesa_configuration" model="ir.actions.act_window">
+        <field name="name">Mpesa Configuration</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mpesa.configuration</field>
+        <field name="view_mode">form</field>
+    </record>
+
+    <record id="view_mpesa_configuration_form" model="ir.ui.view">
+        <field name="name">mpesa.configuration.form</field>
+        <field name="model">mpesa.configuration</field>
+        <field name="arch" type="xml">
+            <form string="Mpesa Configuration">
+                <sheet>
+                    <group>
+                        <field name="api_key"/>
+                        <field name="password"/>
+                        <field name="short_code"/>
+                        <field name="business_short_code"/>
+                        <field name="passkey"/>
+                        <field name="initiator_name"/>
+                        <field name="callback_url"/>
+                        <field name="account_reference"/>
+                        <field name="transaction_desc"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <menuitem id="mpesa_menu_configuration"
+              name="Mpesa_configuration"
+              action="action_mpesa_configuration"
+              parent="Mpesa_menu_root"
+              sequence="10"/>
+</odoo>
